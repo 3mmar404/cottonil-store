@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قطونيل - فرع أسيوط | المتجر الرسمي</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">قطونيل <span>- فرع أسيوط</span></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="menu-toggle"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+        </div>
+    </header>
+    
+    <nav class="mobile-nav" id="mobile-menu">
+        <ul><li><a href="#hero">الرئيسية</a></li><li><a href="#products">المنتجات</a></li><li><a href="#contact">تواصل معنا</a></li></ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div id="hero-bg"></div>
+            <div class="hero-content">
+                <h1><span class="typewriter">الجودة التي <span>تلمسها</span></span></h1>
+                <p>اكتشف تشكيلتنا الفاخرة من الملابس القطنية التي تجمع بين الأناقة المطلقة والراحة التي لا تضاهى.</p>
+                <a href="#products" class="btn">اكتشف المجموعة</a>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <h2 class="reveal">صُنعت لراحتك</h2>
+                
+                <div class="controls-container reveal">
+                    <input type="search" id="search-input" placeholder="ابحث عن منتج بالاسم..." aria-label="ابحث عن منتج">
+                    <div class="filter-buttons"></div>
+                </div>
+                
+                <div class="product-gallery"></div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="skewed-bg">
+             <div class="container reveal">
+                <h2 class="reveal">نحن في انتظارك</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 01270483365 - 0882071432</p>
+                        <p><i class="fas fa-clock"></i> يوميًا: 11 صباحًا - 12 مساءً</p>
+                        <p><i class="fas fa-map-marker-alt"></i> أبراج النصر/ برج 2أ  - أمام مديرية الصحه - الأزهر</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://wa.me/201270483365?text=مرحباً،%20لدي%20استفسار%20بخصوص%20منتجاتكم" target="_blank" title="واتساب"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" title="انستجرام"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 قطونيل - فرع أسيوط. تم التصميم والتطوير بحب وشغف 🔥</p>
+    </footer>
+
+    <div id="product-modal-overlay" class="modal-overlay"></div>
+    <div id="product-modal" class="modal">
+        <button class="modal-close-btn" id="modal-close-btn">×</button>
+        <div class="modal-content">
+            <div class="modal-image-container">
+                <div class="modal-slider-images"></div>
+            </div>
+            <div class="modal-info">
+                <h3 id="modal-product-name"></h3>
+                <p id="modal-product-price" class="product-price"></p>
+                <div id="modal-product-details" class="product-details"></div>
+                <a href="#" id="modal-order-btn" class="btn" target="_blank">اطلبه الآن عبر واتساب</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
